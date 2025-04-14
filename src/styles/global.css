@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+a,
+button {
+  font-family: "Libre Baskerville";
+}
+
+p,
+h1,
+h2,
+h3 {
+  font-family: "Inconsolata";
+}
+
+a {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  height: 0.3em;
+  width: 100%;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.2s ease-in-out;
+  border-radius: 5px;
+}
+
+a:hover::after {
+  transform: scaleX(1);
+}

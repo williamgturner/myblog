@@ -1,0 +1,61 @@
+---
+import "./src/styles/global.css";
+---
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+  rel="stylesheet"
+/>
+
+<button
+  class="w-full lg:hidden p-4 text-xl"
+  id="menu-toggle"
+  aria-label="Toggle menu"
+>
+  v
+</button>
+
+<nav
+  id="mobile-nav"
+  class="absolute justify-center top-0 left-0 w-full bg-white transform -translate-y-full transition-transform duration-150 ease-in-out lg:relative lg:translate-y-0 lg:flex lg:w-1/4 h-screen z-50"
+>
+  <button
+    id="close-button"
+    class="absolute top-4 left-1/2 transform -translate-x-1/2 lg:hidden"
+    >x</button
+  >
+  <ul class="flex flex-col justify-evenly h-screen p-4">
+    <li><a href="/">home</a></li>
+    <li><a href="/blog/">blog</a></li>
+    <li><a href="/projects/">projects</a></li>
+    <li><a href="/listening/">listening</a></li>
+    <li><a href="/reading/">reading</a></li>
+    <li><a href="/about/">about</a></li>
+  </ul>
+</nav>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const toggleButton = document.getElementById("menu-toggle");
+    const closeButton = document.getElementById("close-button");
+    const nav = document.getElementById("mobile-nav");
+
+    toggleButton.addEventListener("click", () => {
+      nav.classList.remove("-translate-y-full");
+      nav.classList.add("translate-y-0");
+    });
+
+    closeButton.addEventListener("click", () => {
+      nav.classList.remove("translate-y-0");
+      nav.classList.add("-translate-y-full");
+    });
+  });
+</script>
+
+<style>
+  li {
+    text-align: center;
+  }
+</style>

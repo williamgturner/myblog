@@ -16,7 +16,7 @@ const publishedPosts = allPosts
   <ul>
     {
       publishedPosts.map((post) => (
-        <li class="my-5">
+        <li>
           <h2>{post.data.title}</h2>
           <small>
             {new Date(post.data.pubDate).toLocaleString("en-NZ", {
@@ -45,6 +45,10 @@ const publishedPosts = allPosts
 <style>
   * {
     font-family: "Inconsolata";
+  }
+
+  ul li:not(:last-child) {
+    margin-bottom: 2rem;
   }
 
   small {

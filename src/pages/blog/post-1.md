@@ -16,5 +16,4 @@ draft: false
 here I hope to share the things that are near and dear to my heart. Going forward I plan on integrating the spotify web API to retrieve my favourite songs, in addition to the good reads API so you can see what I have been reading. I hope you can find inspiration or take interest in the things I share.
 
 Thank you,
-
 Will

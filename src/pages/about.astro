@@ -4,11 +4,53 @@ import Layout from "../layouts/MainLayout.astro";
 
 <Layout>
   <h1>will turner</h1>
-  <p>
-    hi, I'm Will — a student passionate about building unique and useful
-    full-stack applications. I'm currently in my final year studying Computer
-    Science with a minor in Business Analytics at the University of Canterbury.
-    When I'm not coding, I love creating and listening to music, documenting my
-    life, and exploring the outdoors.
-  </p>
+  <div class="flex flex-col-reverse lg:flex-row">
+    <p>
+      hi, I'm Will — a student passionate about building unique and useful
+      full-stack applications. I'm currently in my final year studying Computer
+      Science with a minor in Business Analytics at the University of
+      Canterbury. When I'm not coding, I love creating and listening to music,
+      documenting my life, and exploring the outdoors.
+    </p>
+    <img
+      src="/myblog/images/aboutPic.JPG"
+      class="mb-5 lg:mb-1 lg:ms-5 w-[50%] lg:w-full lg:justify-self-start rounded-2xl rounded-b-md"
+    />
+  </div>
+  <br />
+  <hr class="pb-[1rem] lg:hidden" />
+  <div class="flex flex-col lg:flex-row">
+    <div class="flex flex-col">
+      <h2>this site</h2>
+      <p>built with astro.js and tailwind. Hosted via github pages</p>
+    </div>
+    <hr class="pb-[1rem] lg:hidden" />
+    <div class="flex flex-col flex-grow-1 lg:items-end">
+      <ul>
+        <li class="lg:text-end">
+          <span>contact</span>
+        </li>
+        <li class="lg:text-end">
+          <a href="mailto:willguyturner@gmail.com">willguyturner@gmail.com</a>
+        </li>
+        <li class="lg:text-end">
+          <span>links</span>
+        </li>
+        <li class="lg:text-end">
+          <a href="https://github.com/williamgturner">github</a>
+        </li>
+        <li class="lg:text-end">
+          <a href="https://www.linkedin.com/in/william-turner-527026354/"
+            >linkedin</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
 </Layout>
+
+<style>
+  span {
+    text-align: end;
+  }
+</style>

@@ -1,11 +1,14 @@
 @import "tailwindcss";
-
-a,
 button {
   font-family: "Libre Baskerville";
 }
 
+nav a {
+  font-family: "Libre Baskerville";
+}
+
 p,
+a,
 span,
 h1,
 h2,

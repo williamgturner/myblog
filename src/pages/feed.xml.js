@@ -1,6 +1,6 @@
 import rss from "@astrojs/rss";
 import { getCollection } from "astro:content";
-import { DateTime } from "luxon"; // Import Luxon for date formatting
+import { DateTime } from "luxon";
 import sanitizeHtml from "sanitize-html";
 import MarkdownIt from "markdown-it";
 const parser = new MarkdownIt();
@@ -10,19 +10,19 @@ export async function GET(context) {
   const published = blog.filter((post) => !post.data.draft);
 
   return rss({
-    stylesheet: "/myblog/pretty-feed-v3.xsl", // Make sure this XSL is properly placed in your public folder
+    stylesheet: "/myblog/pretty-feed-v3.xsl",
     title: "will's blog",
     description: "sharing my favourite things",
-    site: `${context.site}myblog`, // Use context.site to ensure the full site URL is used for the feed
+    site: `${context.site}myblog`,
     items: published.map((post) => ({
       title: post.data.title,
-      pubDate: DateTime.fromJSDate(post.data.pubDate).toRFC2822(), // Proper RFC 2822 format for dates
+      pubDate: DateTime.fromJSDate(post.data.pubDate).toRFC2822(),
       description: post.data.description,
       content: sanitizeHtml(parser.render(post.body), {
         allowedTags: sanitizeHtml.defaults.allowedTags.concat(["img"]),
       }),
-      link: `${context.site}myblog/blog/${post.id}`, // Full URL for the post
+      link: `${context.site}myblog/blog/${post.id}`,
     })),
-    customData: `<language>en-uk</language>`, // Language tag for the RSS feed
+    customData: `<language>en-uk</language>`,
   });
 }

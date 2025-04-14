@@ -1,16 +1,62 @@
 ---
 import Head from "../components/Head.astro";
 import Layout from "../layouts/MainLayout.astro";
+import { getCollection } from "astro:content";
+
+const allPosts = await getCollection("blog");
+const publishedPosts = allPosts
+  .filter((post) => !post.data.draft)
+  .sort(
+    (a, b) =>
+      new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime()
+  );
 ---
 
 <Head>
   <Layout>
-    <p>content</p>
+    <h1 class="pb-5">Blog Posts</h1>
+    <ul>
+      {
+        publishedPosts.map((post) => (
+          <li class="my-5">
+            <h2>{post.data.title}</h2>
+            <small>
+              {new Date(post.data.pubDate).toLocaleString("en-NZ", {
+                year: "numeric",
+                month: "long",
+                day: "numeric",
+                hour: "2-digit",
+                minute: "2-digit",
+                hour12: true,
+              })}
+            </small>
+            <p>
+              {post.data.description}{" "}
+              <a class="align-bottom" href={`/blog/${post.id}`}>
+                read more &gt;
+              </a>
+            </p>
+          </li>
+        ))
+      }
+    </ul>
   </Layout>
 </Head>
 <style>
   html,
   body {
     min-height: 100vh;
+  }
+  * {
+    font-family: "Inconsolata";
+  }
+
+  h2 {
+    font-weight: 700;
+  }
+
+  small {
+    font-size: 0.8rem;
+    font-style: oblique;
   }
 </style>

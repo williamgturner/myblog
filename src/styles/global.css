@@ -12,10 +12,19 @@ h3 {
   font-family: "Inconsolata";
 }
 
+h1 {
+  font-size: 2rem;
+}
+
+nav a {
+  color: black;
+}
+
 a {
   position: relative;
   display: inline-block;
   overflow: hidden;
+  color: blue;
 }
 
 a::after {

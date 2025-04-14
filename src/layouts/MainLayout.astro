@@ -4,7 +4,15 @@ import Navbar from "../components/Navbar.astro";
 
 <body class="flex flex-col lg:flex-row">
   <Navbar />
-  <div class="flex flex-col flex-grow mx-10 lg:mx-30">
+  <div
+    class="flex flex-col mx-10 lg:mx-40 lg:pr-2 max-h-screen lg:my-5 overflow-y-auto"
+  >
     <slot />
   </div>
 </body>
+
+<style>
+  h1 {
+    font-size: 2rem;
+  }
+</style>

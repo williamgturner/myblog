@@ -17,10 +17,10 @@ export async function GET(context) {
     items: published.map((post) => ({
       title: post.data.title,
       pubDate: DateTime.fromJSDate(post.data.pubDate).toRFC2822(),
-      image: `${context.site}myblog/${post.data.image.url}`,
+      image: `${context.site}${post.data.image.url}`,
       description: post.data.description,
       content: sanitizeHtml(
-        `<img src="${context.site}myblog/${post.data.image.url}" alt="${post.data.image.alt}" style="max-width:100%;height:auto;"><br/>` +
+        `<img src="${context.site}${post.data.image.url}" alt="${post.data.image.alt}" style="max-width:100%;height:auto;"><br/>` +
           parser.render(post.body),
         {
           allowedTags: sanitizeHtml.defaults.allowedTags.concat(["img"]),

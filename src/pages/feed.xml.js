@@ -7,13 +7,14 @@ const parser = new MarkdownIt();
 
 export async function GET(context) {
   const blog = await getCollection("blog");
+  const published = blog.filter((post) => !post.data.draft);
 
   return rss({
     stylesheet: "/myblog/pretty-feed-v3.xsl", // Make sure this XSL is properly placed in your public folder
     title: "will's blog",
     description: "sharing my favourite things",
     site: `${context.site}myblog`, // Use context.site to ensure the full site URL is used for the feed
-    items: blog.map((post) => ({
+    items: published.map((post) => ({
       title: post.data.title,
       pubDate: DateTime.fromJSDate(post.data.pubDate).toRFC2822(), // Proper RFC 2822 format for dates
       description: post.data.description,

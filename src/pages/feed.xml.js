@@ -18,9 +18,17 @@ export async function GET(context) {
       title: post.data.title,
       pubDate: DateTime.fromJSDate(post.data.pubDate).toRFC2822(),
       description: post.data.description,
-      content: sanitizeHtml(parser.render(post.body), {
-        allowedTags: sanitizeHtml.defaults.allowedTags.concat(["img"]),
-      }),
+      content: sanitizeHtml(
+        `<img src="${post.data.image.url}" alt="${post.data.image.alt}" style="max-width:100%;height:auto;"><br/>` +
+          parser.render(post.body),
+        {
+          allowedTags: sanitizeHtml.defaults.allowedTags.concat(["img"]),
+          allowedAttributes: {
+            ...sanitizeHtml.defaults.allowedAttributes,
+            img: ["src", "alt", "style"],
+          },
+        }
+      ),
       link: `${context.site}myblog/blog/${post.id}`,
     })),
     customData: `<language>en-uk</language>`,

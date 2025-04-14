@@ -5,6 +5,10 @@ const blog = defineCollection({
   loader: glob({ pattern: "**/*.md", base: "./src/pages/blog" }),
   schema: z.object({
     title: z.string(),
+    image: z.object({
+      url: z.string(),
+      alt: z.string(),
+    }),
     pubDate: z.date(),
     description: z.string(),
     draft: z.boolean().optional(),

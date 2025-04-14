@@ -17,7 +17,14 @@ const publishedPosts = allPosts
     {
       publishedPosts.map((post) => (
         <li>
-          <h2>{post.data.title}</h2>
+          <div class="flex">
+            <img
+              class="w-10 h-10"
+              src={`${post.data.image.url}`}
+              alt={post.data.title}
+            />
+            <h2 class="content-center ms-5">{post.data.title}</h2>
+          </div>
           <small>
             {new Date(post.data.pubDate).toLocaleString("en-NZ", {
               year: "numeric",

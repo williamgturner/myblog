@@ -17,6 +17,7 @@ export async function GET(context) {
     items: published.map((post) => ({
       title: post.data.title,
       pubDate: DateTime.fromJSDate(post.data.pubDate).toRFC2822(),
+      image: post.data.image.url,
       description: post.data.description,
       content: sanitizeHtml(
         `<img src="${post.data.image.url}" alt="${post.data.image.alt}" style="max-width:100%;height:auto;"><br/>` +

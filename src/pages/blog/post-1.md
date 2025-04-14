@@ -6,7 +6,7 @@ description: "a site is born"
 author: "Will Turner"
 image:
   url: "/myblog/images/post1.png"
-  alt: ""
+  alt: "A minecraft grass block"
 tags: ["devlog", "webdev"]
 draft: false
 ---

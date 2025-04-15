@@ -1,4 +1,16 @@
 @import "tailwindcss";
+
+.flex-container {
+  display: flex;
+}
+.flex-item {
+  min-width: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 button {
   font-family: "Libre Baskerville";
 }

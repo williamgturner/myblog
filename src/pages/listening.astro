@@ -5,39 +5,43 @@ import Music from "../components/Music.astro";
 
 <Layout>
   <h1>listening</h1>
-  <div id="music-info">
-    <p>Loading current songs…</p>
+  <div id="music-info" class="grid grid-cols-3">
+    <p>Loading top tracks…</p>
   </div>
   <Music />
 </Layout>
 
 <script>
-  async function fetchTopTrack() {
+  async function fetchTopTracks() {
     try {
       const res = await fetch("/.netlify/functions/spotify");
       const data = await res.json();
 
       const container = document.getElementById("music-info");
 
-      if (!data?.title) {
-        container.innerHTML = "<p>No top track found.</p>";
+      if (!Array.isArray(data) || data.length === 0) {
+        container.innerHTML = "<p>No top tracks found.</p>";
         return;
       }
 
-      container.innerHTML = `
-        <div>
-          <img src="${data.albumImageUrl}" alt="Album cover" width="64" height="64" />
-          <p><strong>${data.title}</strong> by ${data.artist}</p>
-          <p>Album: ${data.album}</p>
-          <p><a href="${data.songUrl}" target="_blank">Open in Spotify</a></p>
-        </div>
-      `;
+      container.innerHTML = data
+        .map(
+          (track) => `
+          <div style="margin-bottom: 1rem;">
+            <img src="${track.albumImageUrl}" alt="Album cover" width="64" height="64" />
+            <p><strong>${track.title}</strong> by ${track.artist}</p>
+            <p>Album: ${track.album}</p>
+            <p><a href="${track.songUrl}" target="_blank">Open in Spotify</a></p>
+          </div>
+        `
+        )
+        .join("");
     } catch (err) {
       document.getElementById("music-info").innerHTML =
-        "<p>Error loading top track.</p>";
+        "<p>Error loading top tracks.</p>";
       console.error("Failed to load music:", err);
     }
   }
 
-  fetchTopTrack();
+  fetchTopTracks();
 </script>

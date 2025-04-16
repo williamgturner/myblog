@@ -45,6 +45,10 @@ p {
   margin-bottom: 1rem;
 }
 
+/* Listening page */
+#topTrack a {
+  color: black;
+}
 #topTrack p {
   margin-bottom: 0;
   padding: 0;

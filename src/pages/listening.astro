@@ -7,3 +7,15 @@ import Music from "../components/Music.astro";
   <h1>listening</h1>
   <Music />
 </Layout>
+
+<script>
+  fetch("/.netlify/functions/spotify")
+    .then((res) => res.json())
+    .then((data) => {
+      if (data && data.item) {
+        document.body.innerHTML += `<h2>Now Playing: ${data.item.name} by ${data.item.artists[0].name}</h2>`;
+      } else {
+        document.body.innerHTML += `<p>Nothing currently playing 😴</p>`;
+      }
+    });
+</script>

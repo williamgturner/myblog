@@ -5,8 +5,7 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://williamgturner.github.io",
-  base: "/myblog/",
+  site: "https://willturner.netlify.app/",
   devToolbar: {
     enabled: false,
   },

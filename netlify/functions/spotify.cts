@@ -1,9 +1,9 @@
 const fetch = require("node-fetch");
 
 exports.handler = async function () {
-  const clientId = process.env.SPOTIFY_CLIENT_ID;
-  const clientSecret = process.env.SPOTIFY_CLIENT_SECRET;
-  const refreshToken = process.env.SPOTIFY_REFRESH_TOKEN;
+  const clientId = Netlify.env.get("SPOTIFY_CLIENT_ID");
+  const clientSecret = Netlify.env.get("SPOTIFY_CLIENT_SECRET");
+  const refreshToken = Netlify.env.get("SPOTIFY_REFRESH_TOKEN");
 
   // Refresh access token
   const tokenRes = await fetch("https://accounts.spotify.com/api/token", {

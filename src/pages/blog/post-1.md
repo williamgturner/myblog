@@ -5,7 +5,7 @@ pubDate: 2025-04-14T20:18:49+12:00
 description: "a site is born"
 author: "Will Turner"
 image:
-  url: "/myblog/images/post1.png"
+  url: "/images/post1.png"
   alt: "A minecraft grass block"
 tags: ["devlog", "webdev"]
 draft: false

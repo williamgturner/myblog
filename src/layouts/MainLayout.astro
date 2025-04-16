@@ -7,7 +7,45 @@ import Head from "../components/Head.astro";
 <div class="flex flex-col lg:flex-row max-h-screen">
   <Navbar />
 
-  <main class="flex flex-col flex-grow mx-6 lg:mx-20 lg:my-5 overflow-y-auto">
+  <main
+    id="content"
+    class="flex flex-col flex-grow mx-6 lg:mx-20 lg:my-5 overflow-y-auto"
+  >
     <slot class="content" />
+    <div
+      id="scroll-indicator"
+      class="pointer-events-none absolute bottom-0 left-0 w-full h-50 bg-gradient-to-t from-[#fff9DD] to-transparent transition-opacity duration-300"
+    >
+    </div>
   </main>
 </div>
+
+<script>
+  const container = document.getElementById("content");
+  const indicator = document.getElementById("scroll-indicator");
+
+  function updateIndicator() {
+    const isScrollable = container.scrollHeight > container.clientHeight;
+    const isAtBottom =
+      container.scrollTop + container.clientHeight >=
+      container.scrollHeight - 1;
+
+    indicator.style.opacity = isScrollable && !isAtBottom ? "1" : "0";
+  }
+
+  container.addEventListener("scroll", updateIndicator);
+  window.addEventListener("resize", updateIndicator);
+  window.addEventListener("load", updateIndicator);
+
+  const observer = new MutationObserver(() => {
+    updateIndicator();
+  });
+
+  observer.observe(container, {
+    childList: true,
+    subtree: true,
+  });
+
+  // Just in case initial content takes a sec
+  setTimeout(updateIndicator, 100);
+</script>

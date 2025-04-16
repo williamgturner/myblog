@@ -1,11 +1,11 @@
 @import "tailwindcss";
 
-.flex-container {
-  display: flex;
+nav,
+body,
+html {
+  background-color: #fff9dd;
 }
-.flex-item {
-  min-width: 0;
-}
+
 *,
 *::before,
 *::after {
@@ -25,7 +25,8 @@ span,
 small,
 h1,
 h2,
-h3 {
+h3,
+* {
   font-family: "Inconsolata";
 }
 
@@ -42,6 +43,11 @@ h2 {
 p {
   font-size: 1rem;
   margin-bottom: 1rem;
+}
+
+#topTrack p {
+  margin-bottom: 0;
+  padding: 0;
 }
 
 /* Nav Styling */

@@ -1,0 +1,7 @@
+# netlify.toml
+[dev]
+  command = "npm run dev"
+  port = 8888
+  targetPort = 4321
+[functions]
+  directory = "netlify/functions"

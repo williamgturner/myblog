@@ -4,18 +4,39 @@ import Music from "../components/Music.astro";
 ---
 
 <Layout>
-  <h1>listening</h1>
+  <div id="music-info">
+    <p>Loading current song…</p>
+  </div>
   <Music />
 </Layout>
 
 <script>
-  fetch("./netlify/functions/spotify")
-    .then((res) => res.json())
-    .then((data) => {
-      if (data && data.item) {
-        document.body.innerHTML += `<h2>Now Playing: ${data.item.name} by ${data.item.artists[0].name}</h2>`;
-      } else {
-        document.body.innerHTML += `<p>Nothing currently playing 😴</p>`;
+  async function fetchTopTrack() {
+    try {
+      const res = await fetch("/.netlify/functions/spotify");
+      const data = await res.json();
+
+      const container = document.getElementById("music-info");
+
+      if (!data?.title) {
+        container.innerHTML = "<p>No top track found.</p>";
+        return;
       }
-    });
+
+      container.innerHTML = `
+        <div>
+          <img src="${data.albumImageUrl}" alt="Album cover" width="64" height="64" />
+          <p><strong>${data.title}</strong> by ${data.artist}</p>
+          <p>Album: ${data.album}</p>
+          <p><a href="${data.songUrl}" target="_blank">Open in Spotify</a></p>
+        </div>
+      `;
+    } catch (err) {
+      document.getElementById("music-info").innerHTML =
+        "<p>Error loading top track.</p>";
+      console.error("Failed to load music:", err);
+    }
+  }
+
+  fetchTopTrack();
 </script>

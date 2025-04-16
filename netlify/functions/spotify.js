@@ -35,6 +35,8 @@ exports.handler = async function () {
 
   const data = await spotifyRes.json();
 
+  console.log(process.env.SPOTIFY_CLIENT_ID);
+  console.log(data);
   return {
     statusCode: 200,
     body: JSON.stringify({ test: "test" }),

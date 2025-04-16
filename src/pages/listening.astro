@@ -28,7 +28,7 @@ import Music from "../components/Music.astro";
       container.innerHTML = data
         .map(
           (track) => `
-          <div style="margin-bottom: 1rem;">
+          <div class="m-[1rem]">
             <img src="${track.albumImageUrl}" alt="Album cover" width="64" height="64" />
             <p><strong>${track.title}</strong> by ${track.artist}</p>
             <p>Album: ${track.album}</p>

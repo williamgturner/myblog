@@ -6,7 +6,10 @@ import Music from "../components/Music.astro";
 <Layout>
   <h1>listening</h1>
   <h2>my top 10 tracks of the last 4 weeks:</h2>
-  <div id="music-info" class="grid grid-cols-2 lg:grid-cols-3 text-black">
+  <div
+    id="music-info"
+    class="grid grid-cols-2 lg:grid-cols-3 gap-x-4 text-black"
+  >
     <p>loading top tracks…</p>
   </div>
   <Music />
@@ -29,8 +32,8 @@ import Music from "../components/Music.astro";
         // Inject empty card before the last one
         if (index === data.length - 1) {
           return `
-      <div class="mr-[1rem] mb-[2rem] invisible hidden lg:block"></div>
-      <div id="topTrack" class="mr-[1rem] mb-[2rem] bg-[#ede7d0] p-5 rounded-xl shadow-lg border-2 border-black">
+      <div class="mb-[2rem] invisible hidden lg:block"></div>
+      <div id="topTrack" class="mb-[2rem] bg-[#ede7d0] p-5 rounded-xl shadow-lg border-2 border-black">
         <a href="${track.songUrl}" class="text-black" target="_blank">
           <div class="text-lg font-bold mb-2 track-title">${index + 1}. ${track.title}</div>
           <div class="track-info">
@@ -40,12 +43,12 @@ import Music from "../components/Music.astro";
           </div>
         </a>
       </div>
-      <div class="mr-[1rem] mb-[2rem] invisible hidden lg:block"></div>
+      <div class="mb-[2rem] invisible hidden lg:block"></div>
     `;
         }
 
         return `
-    <div id="topTrack" class="mr-[1rem] mb-[2rem] bg-[#ede7d0] p-5 rounded-xl shadow-lg border-2 border-black">
+    <div id="topTrack" class="mb-[2rem] bg-[#ede7d0] p-5 rounded-xl shadow-lg border-2 border-black">
       <a href="${track.songUrl}" class="text-black" target="_blank">
         <div class="text-lg font-bold mb-2 track-title">${index + 1}. ${track.title}</div>
         <div class="track-info">

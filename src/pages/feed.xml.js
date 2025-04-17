@@ -10,10 +10,10 @@ export async function GET(context) {
   const published = blog.filter((post) => !post.data.draft);
 
   return rss({
-    stylesheet: "/myblog/pretty-feed-v3.xsl",
+    stylesheet: "/pretty-feed-v3.xsl",
     title: "will's blog",
     description: "sharing my favourite things",
-    site: `${context.site}myblog`,
+    site: `${context.site}`,
     items: published.map((post) => ({
       title: post.data.title,
       pubDate: DateTime.fromJSDate(post.data.pubDate).toRFC2822(),
@@ -30,7 +30,7 @@ export async function GET(context) {
           },
         }
       ),
-      link: `${context.site}myblog/blog/${post.id}`,
+      link: `${context.site}/blog/${post.id}`,
     })),
     customData: `<language>en-uk</language>`,
   });

@@ -12,7 +12,16 @@ const publishedPosts = allPosts
 ---
 
 <Layout>
-  <h1>blog</h1>
+  <div class="flex items-center pb-5">
+    <h1>blog</h1>
+    <a href="/feed.xml">
+      <img
+        class="ms-5 w-[32px] h-[32px] rounded-sm"
+        alt="RSS feed"
+        src="/rss.svg"
+      />
+    </a>
+  </div>
   <ul>
     {
       publishedPosts.map((post) => (
@@ -40,7 +49,7 @@ const publishedPosts = allPosts
           <p>
             {post.data.description}
             {" | "}
-            <a class="align-bottom" href={`/myblog/blog/${post.id}`}>
+            <a class="align-bottom" href={`/blog/${post.id}`}>
               read more &gt;
             </a>
           </p>
@@ -52,6 +61,10 @@ const publishedPosts = allPosts
 <style>
   * {
     font-family: "Inconsolata";
+  }
+
+  h1 {
+    padding: 0;
   }
 
   ul li:not(:last-child) {

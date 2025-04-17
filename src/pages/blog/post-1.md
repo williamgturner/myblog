@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/MainLayout.astro
+layout: ../../layouts/PostLayout.astro
 title: "hello world"
 pubDate: 2025-04-14T20:18:49+12:00
 description: "a site is born"

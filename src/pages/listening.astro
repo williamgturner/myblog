@@ -6,11 +6,25 @@ import Music from "../components/Music.astro";
 <Layout>
   <h1>listening</h1>
   <h2>my top 10 tracks of the last 4 weeks:</h2>
-  <div id="music-info" class="grid grid-cols-3">
+  <div id="music-info" class="grid grid-cols-3 text-black">
     <p>loading top tracks…</p>
   </div>
   <Music />
 </Layout>
+
+<style>
+  #topTrack a {
+    color: black;
+  }
+  #topTrack p {
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  * {
+    color: black;
+  }
+</style>
 
 <script>
   async function fetchTopTracks() {
@@ -29,7 +43,7 @@ import Music from "../components/Music.astro";
         .map(
           (track, index) => `
             <div id="topTrack" class="mr-[1rem] mb-[2rem]">
-              <a href="${track.songUrl}" target="_blank">
+              <a href="${track.songUrl}" class="text-black" target="_blank">
               <div class="text-lg font-bold mb-1">${index + 1}.</div>
               <div class="flex">
                 <img class="mr-5 mb-2" src="${track.albumImageUrl}" alt="Album cover" width="64" height="64" />

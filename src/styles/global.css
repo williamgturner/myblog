@@ -1,35 +1,5 @@
 @import "tailwindcss";
 
-nav,
-body,
-html {
-  background-color: #fff9dd;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-button {
-  font-family: "Libre Baskerville";
-}
-
-nav a {
-  font-family: "Libre Baskerville";
-}
-
-p,
-a,
-span,
-small,
-h1,
-h2,
-h3,
-* {
-  font-family: "Inconsolata";
-}
-
 h1 {
   font-size: 2rem;
   padding-bottom: 20px;
@@ -45,25 +15,13 @@ p {
   margin-bottom: 1rem;
 }
 
-/* Listening page */
-#topTrack a {
-  color: black;
-}
-#topTrack p {
-  margin-bottom: 0;
-  padding: 0;
-}
-
-/* Nav Styling */
-nav a {
-  color: black;
-}
+/* Link Hover Animation */
 
 a {
   position: relative;
   display: inline-block;
   overflow: hidden;
-  color: blue;
+  font-family: "Inconsolata";
 }
 
 a::after {

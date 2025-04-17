@@ -14,7 +14,7 @@ const publishedPosts = allPosts
 <Layout>
   <div class="flex items-center pb-5">
     <h1>blog</h1>
-    <a href="/feed.xml">
+    <a href="/feed.xml" class="no-underline">
       <img
         class="ms-5 w-[32px] h-[32px] rounded-sm"
         alt="RSS feed"
@@ -65,6 +65,10 @@ const publishedPosts = allPosts
 
   h1 {
     padding: 0;
+  }
+
+  a.no-underline::after {
+    content: none;
   }
 
   ul li:not(:last-child) {

@@ -9,12 +9,12 @@ import Head from "../components/Head.astro";
 
   <main
     id="content"
-    class="flex flex-col flex-grow mx-6 lg:mx-20 lg:my-10 overflow-y-auto md:pr-3"
+    class="flex flex-col flex-grow mx-6 lg:mx-20 lg:py-10 overflow-y-auto md:pr-3"
   >
     <slot class="content" />
     <div
       id="scroll-indicator"
-      class="pointer-events-none absolute bottom-0 left-0 w-full h-50 bg-gradient-to-t from-[#fff9DD] to-transparent transition-opacity duration-300"
+      class="pointer-events-none absolute bottom-0 left-0 w-full h-30 bg-gradient-to-t from-[#fff9DD] to-transparent transition-opacity duration-300"
     >
     </div>
   </main>

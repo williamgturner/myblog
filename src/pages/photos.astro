@@ -1,7 +1,24 @@
 ---
 import Layout from "../layouts/MainLayout.astro";
+
+import { getPhotoFilenames } from "../util/getPhotoList";
+
+// Get the filenames at build time
+const filenames = getPhotoFilenames();
 ---
 
 <Layout>
   <h1>photos</h1>
+  <div class="columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
+    {
+      filenames.map((name) => (
+        <img
+          src={`/images/photos/${name}`}
+          alt={name}
+          class="w-full rounded-sm shadow-md mb-4 break-inside-avoid"
+          loading="lazy"
+        />
+      ))
+    }
+  </div>
 </Layout>

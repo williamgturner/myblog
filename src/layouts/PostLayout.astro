@@ -14,7 +14,7 @@ const { frontmatter } = Astro.props;
         alt={frontmatter.title}
       />
       <div>
-        <h1 class="text-[90px]">{frontmatter.title}</h1>
+        <h1 class="text-[90px] leading-tight">{frontmatter.title}</h1>
         <small>
           {
             new Date(frontmatter.pubDate).toLocaleString("en-NZ", {

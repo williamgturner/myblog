@@ -1,0 +1,70 @@
+---
+import BaseLayout from "../../layouts/MainLayout.astro";
+import { getCollection } from "astro:content";
+
+export async function getStaticPaths() {
+  const allPosts = await getCollection("blog");
+  const publishedPosts = allPosts
+    .filter((post) => !post.data.draft)
+    .sort(
+      (a, b) =>
+        new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime()
+    );
+
+  const uniqueTags = [
+    ...new Set(publishedPosts.map((post: any) => post.frontmatter.tags).flat()),
+  ];
+
+  return uniqueTags.map((tag) => {
+    const filteredPosts = allPosts.filter((post: any) =>
+      post.frontmatter.tags.includes(tag)
+    );
+    return {
+      params: { tag },
+      props: { posts: filteredPosts },
+    };
+  });
+}
+
+const { tag } = Astro.params;
+const { posts } = Astro.props;
+---
+
+<BaseLayout pageTitle={tag}>
+  <p>Posts tagged with {tag}</p>
+  <ul>
+    {
+      posts.map((post) => (
+        <li>
+          <div class="flex">
+            <img
+              class="w-10 h-10"
+              src={`${post.data.image.url}`}
+              alt={post.data.title}
+            />
+            <h2 class="content-center ms-5">{post.data.title}</h2>
+          </div>
+          <small>
+            {new Date(post.data.pubDate).toLocaleString("en-NZ", {
+              year: "numeric",
+              month: "long",
+              day: "numeric",
+              hour: "2-digit",
+              minute: "2-digit",
+              second: "2-digit",
+              hour12: true,
+            })}
+            NZST
+          </small>
+          <p>
+            {post.data.description}
+            {" | "}
+            <a class="align-bottom" href={`/blog/${post.id}`}>
+              read more &gt;
+            </a>
+          </p>
+        </li>
+      ))
+    }
+  </ul>
+</BaseLayout>

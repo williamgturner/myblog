@@ -6,25 +6,11 @@ import Music from "../components/Music.astro";
 <Layout>
   <h1>listening</h1>
   <h2>my top 10 tracks of the last 4 weeks:</h2>
-  <div id="music-info" class="grid grid-cols-3 text-black">
+  <div id="music-info" class="grid grid-cols-2 lg:grid-cols-3 text-black">
     <p>loading top tracks…</p>
   </div>
   <Music />
 </Layout>
-
-<style>
-  #topTrack a {
-    color: black;
-  }
-  #topTrack p {
-    margin-bottom: 0;
-    padding: 0;
-  }
-
-  * {
-    color: black;
-  }
-</style>
 
 <script>
   async function fetchTopTracks() {
@@ -42,17 +28,14 @@ import Music from "../components/Music.astro";
       container.innerHTML = data
         .map(
           (track, index) => `
-            <div id="topTrack" class="mr-[1rem] mb-[2rem]">
+            <div id="topTrack" class="mr-[1rem] mb-[2rem] bg-[#ede7d0] p-5 rounded-xl shadow-lg border-2 border-black">
               <a href="${track.songUrl}" class="text-black" target="_blank">
-              <div class="text-lg font-bold mb-1">${index + 1}.</div>
-              <div class="flex">
-                <img class="mr-5 mb-2" src="${track.albumImageUrl}" alt="Album cover" width="64" height="64" />
-                <div>
-                  <p><strong>${track.title}</strong></p>
-                  <p>${track.artist}</p>
+                <div class="text-lg font-bold mb-2">${index + 1}. ${track.title}</div>
+                <div class="track-info">
+                  <img class="border-2 border-black rounded-sm" src="${track.albumImageUrl}" alt="Album cover" />
+                  <p><strong>Artist:</strong> ${track.artist}</p>
+                  <p><strong>Album:</strong> ${track.album}</p>
                 </div>
-              </div>
-              <p>album: ${track.album}</p>
               </a>
             </div>
         `
@@ -67,3 +50,39 @@ import Music from "../components/Music.astro";
 
   fetchTopTracks();
 </script>
+
+<style>
+  h2 {
+    margin-bottom: 1rem;
+  }
+
+  * {
+    color: black;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  #topTrack a {
+    color: black;
+    text-decoration: none;
+  }
+
+  .track-info p {
+    margin-bottom: 0 !important;
+  }
+
+  img {
+    height: 64px;
+    width: 64px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  .track-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+</style>

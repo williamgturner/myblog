@@ -26,42 +26,42 @@ import "../styles/global.css";
     class="absolute top-4 left-1/2 transform -translate-x-1/2 lg:hidden"
     >x</button
   >
-  <ul class="flex flex-col justify-evenly h-screen p-4">
-    <li><a href="/">home</a></li>
+  <ul class="flex flex-col justify-evenly h-screen p-4 text-center text-black>">
+    <li>
+      <a href="
+    "> home </a>
+    </li>
     <li><a href="/blog/">blog</a></li>
     <li><a href="/projects/">projects</a></li>
     <li><a href="/photos/">photos</a></li>
     <li><a href="/listening/">listening</a></li>
     <li><a href="/reading/">reading</a></li>
     <li><a href="/about/">about</a></li>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const toggleButton = document.getElementById("menu-toggle");
+        const closeButton = document.getElementById("close-button");
+        const nav = document.getElementById("mobile-nav");
+
+        toggleButton.addEventListener("click", () => {
+          nav.classList.remove("-translate-y-full");
+          nav.classList.add("translate-y-0");
+        });
+
+        closeButton.addEventListener("click", () => {
+          nav.classList.remove("translate-y-0");
+          nav.classList.add("-translate-y-full");
+        });
+      });
+    </script>
+
+    <style></style>
   </ul>
 </nav>
 
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const toggleButton = document.getElementById("menu-toggle");
-    const closeButton = document.getElementById("close-button");
-    const nav = document.getElementById("mobile-nav");
-
-    toggleButton.addEventListener("click", () => {
-      nav.classList.remove("-translate-y-full");
-      nav.classList.add("translate-y-0");
-    });
-
-    closeButton.addEventListener("click", () => {
-      nav.classList.remove("translate-y-0");
-      nav.classList.add("-translate-y-full");
-    });
-  });
-</script>
-
 <style>
-  li {
-    text-align: center;
-  }
-
-  a {
+  * {
     font-family: "Libre Baskerville";
-    color: black;
   }
 </style>

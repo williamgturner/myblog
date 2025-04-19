@@ -1,14 +1,14 @@
 ---
 layout: ../../layouts/PostLayout.astro
-title: "My Second Blog Post"
+title: "New Page! 'photos'"
 pubDate: 2022-08-01
 description: ""
 author: "Will Turner"
 image:
   url: ""
   alt: ""
-tags: ["astro", "blogging", "learning in public"]
+tags: ["tailwind", "devlog"]
 draft: true
 ---
 
-Test
+A new page has been added!

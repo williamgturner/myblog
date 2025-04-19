@@ -1,0 +1,34 @@
+---
+import Layout from "../../layouts/MainLayout.astro";
+---
+
+<Layout>
+  <h1>ascii generator</h1>
+
+  <div>
+    <div
+      id="add-reno-image"
+      class="w-[100%] lg:w-[50%] lg:m-5 flex flex-col float-right flex-grow-0 flex-shrink-1"
+    >
+      <img
+        class="border-2 rounded-md shadow-lg"
+        src="/images/projects/ascii.png"
+      />
+      <small
+        class="text-gray-400 text-center inline-block flex-grow-0 flex-shrink-1"
+        >ascii output</small
+      >
+    </div>
+    <p>
+      coming in at a whopping 49 lines of code, this was a small CLI i
+      programmed in a short afternoon. using Pillow for image manipulation, the
+      script takes a filepath to a .jpg file and creates a 50px square ascii
+      output.
+    </p>
+  </div>
+</Layout>
+
+<style>
+  #add-reno-image {
+  }
+</style>

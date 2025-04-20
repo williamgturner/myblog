@@ -5,7 +5,7 @@ const { frontmatter } = Astro.props;
 ---
 
 <MainLayout>
-  <div>
+  <div class="mb-5">
     <a href="javascript:history.back()" class="text-xl text-black">&lt; back</a>
     <div id="post-header" class="flex">
       <img
@@ -44,6 +44,10 @@ const { frontmatter } = Astro.props;
 
   a {
     font-family: "Libre Baskerville";
+  }
+
+  p {
+    margin-bottom: 1rem;
   }
 
   img {

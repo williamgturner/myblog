@@ -5,3 +5,6 @@
   targetPort = 4321
 [functions]
   directory = "netlify/functions"
+
+[build.environment]
+  TZ="Pacific/Auckland"

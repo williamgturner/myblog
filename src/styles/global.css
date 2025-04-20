@@ -8,6 +8,7 @@ h1 {
 h2 {
   font-weight: 700;
   padding-bottom: 1rem;
+  font-size: 1.5rem;
 }
 
 * {
@@ -20,6 +21,19 @@ a {
   display: inline-block;
   overflow: hidden;
   font-family: "Inconsolata";
+}
+
+p,
+span {
+  font-size: 1.2rem;
+}
+
+blockquote {
+  border-left: 4px solid #ccc;
+  padding-left: 1rem;
+  color: #555;
+  font-style: italic;
+  margin: 1rem 0;
 }
 
 a::after {

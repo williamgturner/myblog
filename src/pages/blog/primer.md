@@ -13,7 +13,7 @@ draft: false
 
 <img class="w-1/3 rounded-md float-left mr-5" alt="primer movie poster" src="/images/posts/primer.jpg">
 
-<blockquote class="inline">"What's worse, thinking you're being paranoid or knowing you should be?"</blockquote>
+<blockquote class="inline">"What's worse, thinking you're being paranoid or knowing you should be?</blockquote>
 
 i can't stand the likes of _Tenet_, and _Inception_ walks a very fine line for me — but Primer is something else.
 <br>
@@ -39,6 +39,11 @@ Abe is more tentative and calculated, while Aaron is willing to take risks inter
 what changes are those? that is left to your imagination.
 <br>
 <br>
+
+<blockquote class="inline">"I guess I could shave a couple minutes off my day by eating on the toilet.</blockquote>
+<br>
+<br>
+
 while the narrative timeline is at the forefront, it's the evolution of relationship between Aaron and Abe that is the most compelling aspect of the film. how quickly they come to distrust each other as they both scramble backwards through time in order to reverse their mistakes. the more the characters loop back in time, the more uncertain the viewer becomes of which version of them we are watching. this is mirrored by the breakdown of our characters' relationship on screen.
 <br>
 <br>

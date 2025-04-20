@@ -29,6 +29,12 @@ span {
 }
 
 blockquote {
+  background-color: #f4ebc5;
+  padding: 0.4rem;
+  margin: 1rem;
+}
+
+blockquote {
   border-left: 4px solid #ccc;
   padding-left: 1rem;
   color: #555;

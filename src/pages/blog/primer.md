@@ -44,7 +44,7 @@ what changes are those? the protagonists don't know, and neither do we.
 <br>
 <br>
 
-while the narrative timeline is at the forefront, it's the evolution of the relationship between Aaron and Abe that is the most compelling aspect of the film. how quickly they come to distrust each other as they both scramble backwards through time in order to reverse their mistakes. the more the characters loop back in time, the more uncertain the viewer becomes of which version of them we are watching. this is mirrored by the breakdown of our characters' relationship on screen.
+while the timeline narrative is at the forefront, it's the evolution of the relationship between Aaron and Abe that is the most compelling aspect of the film. how quickly they come to distrust each other as they both scramble backwards through time in order to reverse their mistakes. the more the characters loop back in time, the more uncertain the viewer becomes of which version of them we are watching. this is mirrored by the breakdown of our characters' relationship on screen.
 <br>
 <br>
 all in all i really enjoyed watching this movie; and while the director turned out to be a bit of a weirdo, i would recommend checking it out.

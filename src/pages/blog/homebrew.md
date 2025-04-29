@@ -5,7 +5,7 @@ pubDate: 2025-04-29T23:01:14+12:00
 description: "turning bad decisions and binge sessions into lyrical gold"
 author: "Will Turner"
 image:
-  url: "/images/posts/lion-red.png"
+  url: "/images/posts/lion-red.webp"
   alt: "lion red bottle"
 tags: ["music"]
 draft: false

@@ -27,7 +27,7 @@ returning from their indefinite hiatus, *Run It Back* is a more introspective al
 
 ## 80 Down Scencic
 air so cold it hurts your lungs, raindrops like bb pellets; late night drives instill a unique feeling that *80 Down Scenic* manages to capture perfectly.
-> Kind of tempting when I’m this pissed to shift gear and just drift
+> Kind of tempting when I’m this pissed to shift gear and just drift  
 Right up off the cliff, then lift off into abyss
 
 the lyrics of track #7 are grief tinged, soul-searching, and dense. definitely my highlight of the album.

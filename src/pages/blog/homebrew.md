@@ -10,22 +10,22 @@ image:
 tags: ["music"]
 draft: false
 ---
-## Homebrew
+# Homebrew
 homebrew hold a special place in my heart as my favourite kiwi hip hop act. where most rappers try hide their roots by adopting an americanised persona, Tom Scott embraces the accent and tells stories that are common throughout the country.
-## Last Week
+# Last Week
 a flawless execution of a concept album that takes you along for the average week in the life of a classic kiwi dole bludger. *Monday* kicks it off with the dreaded feeling of work ahead, wrapping up on *Sunday* with appreciation for family and life's simplest pleasures.
 
-### Tuesday
+## Tuesday
 my favourite track of my favourite album. the rhyme schemes and story telling on *Tuesday* are next level.
 
 > It costs a couple G's now to buy a block of cheese
 
 short and sharp, *Tuesday* is playful, witty, and hilarious. the sort of thing that can only be written and appreciated by those who are all too familiar with bottom shelf wine, bean nachos and putting $15 on the pump at Z.
 
-## Run It Back
+# Run It Back
 returning from their indefinite hiatus, *Run It Back* is a more introspective album from Tom and Haz; though not without it's lighthearted moments. *Run It Back* incorporates much of the musical style of Tom's other project, *Avantdale Bowling Club* to deliver a smooth, jazzy hip-hop album.
 
-### 80 Down Scencic
+## 80 Down Scencic
 air so cold it hurts your lungs, raindrops like bb pellets; late night drives instill a unique feeling that *80 Down Scenic* manages to capture perfectly.
 > Kind of tempting when I’m this pissed to shift gear and just drift
 Right up off the cliff, then lift off into abyss

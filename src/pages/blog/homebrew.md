@@ -23,10 +23,10 @@ my favourite track of my favourite album. the rhyme schemes and story telling on
 short and sharp, *Tuesday* is playful, witty, and hilarious. the sort of thing that can only be written and appreciated by those who are all too familiar with bottom shelf wine, bean nachos and putting $15 on the pump at Z.
 
 ### [Run It Back](https://open.spotify.com/album/28G6aJ1W2T3QvE6WQrpLrH?si=EpKYEH-pS-uoRL64gkKhgQ)
-returning from their indefinite hiatus, *Run It Back* is a more introspective album from Tom and Haz; though not without it's lighthearted moments. *Run It Back* incorporates a lot of the musical style of Tom's other project, *Avantdale Bowling Club* to deliver a smooth, jazzy hip-hop album.
+returning from their indefinite hiatus, *Run It Back* is a more introspective album from Tom and Haz; though not without it's lighthearted moments. *Run It Back* incorporates much of the musical style of Tom's other project, *Avantdale Bowling Club* to deliver a smooth, jazzy hip-hop album.
 
 #### 80 Down Scencic
-air so cold it hurts your lungs, raindrops like bb pellets, late night drives instill a unique feeling that *80 Down Scenic* manages to capture perfectly.
+air so cold it hurts your lungs, raindrops like bb pellets; late night drives instill a unique feeling that *80 Down Scenic* manages to capture perfectly.
 > Kind of tempting when I’m this pissed to shift gear and just drift
 Right up off the cliff, then lift off into abyss
 

@@ -1,5 +1,6 @@
-# myblog [wip]
+# myblog
 
-the vision is a site where I can publish a blog, the music I'm listening to, and other things I am interested in.
+This is my personal website.
+Features sections where I can post photos, a blog, my projects, and live updates on my top 10 songs from the Spotify API.
 
 built with astro.js & tailwind

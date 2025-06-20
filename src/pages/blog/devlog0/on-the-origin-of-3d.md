@@ -28,7 +28,7 @@ I can't fault you for getting confused; both techniques are very similar, and ha
 Tracing the origin of 3D graphics leads us to *Maze*, a game developed at MIT in 1973, that used vector graphics to simulate 3D environments. *Maze* was revolutionary for its time, but was certainly a product of the technological landscape at its inception. The player's view was restricted to the four cardinal directions, and the graphics were closer to a set of images mimicking depth than the result of live computations.
 
 <div class="flex flex-col items-center my-4">
-  <img src="/images/posts/devDiary0/0.1/MazeWar.jpg" alt="MazeWar 3D" class="w-1/2 h-auto" />
+  <img src="/images/posts/devDiary0/0.1/MazeWar.jpg" alt="MazeWar 3D" class="h-auto" />
   <small class="block text-center text-sm text-gray-500">Maze (1973)</small>
 </div>
 

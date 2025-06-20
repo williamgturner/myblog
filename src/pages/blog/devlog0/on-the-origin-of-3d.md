@@ -1,7 +1,7 @@
 ---
 layout: ../../../layouts/PostLayout.astro
 title: "devDiary 0.1: On the Origin of 3D"
-pubDate: 2025-06-20T20:14:30+12:00
+pubDate: 2025-06-20T14:14z:30+12:00
 description: "2D Walls to 3D Halls"
 author: "Will Turner"
 image:

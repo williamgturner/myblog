@@ -8,9 +8,6 @@ export default defineConfig({
   output: "server", // this is required for SSR and functions
   site: "https://willturner.netlify.app",
   adapter: netlify(),
-  experimental: {
-    session: true,
-  },
   devToolbar: {
     enabled: false,
   },

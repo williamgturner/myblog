@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/PostLayout.astro
+layout: ../../../layouts/PostLayout.astro
 title: "devDiary 0.1: On the Origin of 3D"
 pubDate: 2025-06-20T20:14:30+12:00
 description: "2D Walls to 3D Halls"
@@ -51,7 +51,7 @@ This isn't without its drawbacks though. Raycasting works best with walls at 90-
 <br/>
 <br/>
 ## What's Coming
-In this series of blog posts, I'll be diving in to depth on how raycasting works, and writing my own raycaster.
+In this series of blog posts, I'll be diving in depth on how raycasting works, and writing my own raycaster.
 <br/>
 <br/>
 Stay tuned, or don't, I'll post anyway.

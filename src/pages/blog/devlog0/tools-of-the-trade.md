@@ -10,18 +10,17 @@ image:
 tags: ["devlog", "devDiary0"]
 draft: true
 ---
-To get started with raycasting, I need a few things. I'll be doing everything from 'scratch', but I'm not insane.  
-Really all I need is some way to draw individual pixels on the screen. For this I'll be using [SDL3.0](https://wiki.libsdl.org/SDL3/FrontPage).
+To get started with raycasting, I need a few things. I'll be doing everything from 'scratch', but I'm not insane. Really all I need is some way to draw individual pixels on the screen. For this I'll be using [SDL3.0](https://wiki.libsdl.org/SDL3/FrontPage).
 
 <br/>
 
-Per their website, SDL3.0 is "*a cross-platform development library designed to provide low level access to audio, keyboard, mouse, joystick, and graphics hardware*". Perfect. In the spirit of doing it myself, I'll be writing in C.
+Per their website, SDL3.0 is "*a cross-platform development library designed to provide low level access to audio, keyboard, mouse, joystick, and graphics hardware*". Perfect. In the spirit of doing it myself, I'll be writing in C.  
 
 <br/>
 
 ## SDL3.0
 
-Since my last foray into SDL, there has been a new release, 3.0. The new update introduces a new paradigm for projects.  
+Since my last foray into SDL, there has been a new release, 3.0. The new update introduces a new paradigm for projects.
 Instead of a `main()` function as your entry point, you can use main callbacks instead. You can read more about this [here](https://wiki.libsdl.org/SDL3/README-main-functions#main-callbacks-in-sdl3). I'll be trying this out; because why not?
 
 <br/>

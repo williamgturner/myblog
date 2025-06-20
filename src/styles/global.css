@@ -23,6 +23,10 @@ a {
   text-decoration: none;
 }
 
+p a {
+  color: blue;
+}
+
 p,
 span {
   font-size: 1.2rem;

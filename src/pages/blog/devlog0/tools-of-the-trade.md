@@ -5,7 +5,7 @@ pubDate: 2025-06-20T19:10:43+12:00
 description: "Start Your Engines"
 author: "Will Turner"
 image:
-  url: "/images/posts/devDiary0/0.2/icon.png"
+  url: "/images/posts/devDiary0/0.png"
   alt: "Raygun"
 tags: ["devlog", "devDiary0"]
 draft: true
@@ -26,14 +26,14 @@ Instead of a `main()` function as your entry point, you can use main callbacks i
 <br/>
 
 There's some boilerplate code to copy, thankfully there are some [example programs](https://examples.libsdl.org/SDL3/).  
-The *points* program shows me how to draw individual pixels to the screen; here's what I'm aiming for:
+The *points* program shows how to draw individual pixels to the screen; here's what I'm aiming for:
 <div class="flex flex-col items-center my-4">
   <img src="/images/posts/devDiary0/0.2/pixel.png" alt="Black application window with single white pixel" class="w-1/2 h-auto" />
   <small class="block text-center">Single white pixel!</small>
 </div>
 <br/>
 
-The render loop is located within the `SDL_AppIterate` function. Each iteration I'll clear the screen by setting my draw colour to black, calling the clear function, changing to the colour I want to draw, drawing my points, and finally calling the `SDL_RenderPresent` function to push to the screen!
+The render loop is located within the `SDL_AppIterate()` function. Each iteration I'll clear the screen by setting my draw colour to black, calling the clear function, changing to the colour I want to draw, drawing my points, and finally calling the `SDL_RenderPresent()` function to push to the screen!
 
 <br/>
 

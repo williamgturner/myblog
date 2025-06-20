@@ -5,7 +5,7 @@ pubDate: 2025-06-20T14:14:30+12:00
 description: "2D Walls to 3D Halls"
 author: "Will Turner"
 image:
-  url: "/images/posts/devDiary0/0.1/0.1.png"
+  url: "/images/posts/devDiary0/0.png"
   alt: "Raygun"
 tags: ["devlog", "devDiary0"]
 draft: false

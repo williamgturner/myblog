@@ -37,7 +37,7 @@ It's not until *Hovertank 3D* (1991) that we find the first instance of **raycas
 <br/>
 
 ## How Does it Work?
-Raycasting is a technique to render 2.5D environments from 2D data. A camera is positioned at a point in a Cartesian plane, enclosed within a series of walls along grid lines. One "ray" is cast (hence the name) for each pixel column of the display. These rays extend until they hit a wall. The length of the ray is calculated, which then corresponds to the height of the wall on the screen. Walls that are further away appear smaller, creating the illusion of depth. Because our data only stores information in two axes, raycasting is not truly 3D, and commonly referred to as 2.5D
+Raycasting is a technique to render 3D environments from 2D data. A camera is positioned at a point in a Cartesian plane, enclosed within a series of walls along grid lines. One "ray" is cast (hence the name) for each pixel column of the display. These rays extend until they hit a wall. The length of the ray is calculated, which then corresponds to the height of the wall on the screen. Walls that are further away appear smaller, creating the illusion of depth. Because our data only stores information in two axes, raycasting is not truly 3D, and commonly referred to as 2.5D.
 
 <div class="text-center my-4">
   <img alt="Hovertank 3D" src="/images/posts/devDiary0/0.1/Hovertank.jpg" class="inline-block" />
@@ -51,7 +51,7 @@ This isn't without its drawbacks though. Raycasting works best with walls at 90-
 <br/>
 <br/>
 ## What's Coming
-In this series of blog posts, I'll be diving in depth on how raycasting works, and writing my own raycaster.
+In this series of blog posts, I'll be diving in depth on how raycasting works, and writing my own raycast renderer.
 <br/>
 <br/>
 Stay tuned, or don't, I'll post anyway.

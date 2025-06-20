@@ -10,7 +10,7 @@ image:
 tags: ["devlog", "devDiary0"]
 draft: false
 ---
-Over the course of this dev diary I'll walk through creating 3D graphics from scratch. I'll be creating a raycast renderer to draw a 3D environment with nothing but a buffer of pixels, and maths (rad right?).
+Over the course of this dev diary I'll walk through the process of creating 3D graphics from scratch. I'll be creating a raycast renderer to draw a 3D environment with nothing but a buffer of pixels, and maths (rad right?).
 <br/>
 <br/>
 3D graphics are so commonplace today that those of my generation take them for granted. We can create entire environments in the browser with WebGL, and photorealistic environments with recent breakthroughs in technologies such as ray tracing, and geometry systems like *Nanite.*

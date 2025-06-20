@@ -47,7 +47,7 @@ Raycasting is a technique to render 2.5D environments from 2D data. A camera is 
 The advantage of the raycasting approach is efficient computations, vital back when RAM was measured in kilobytes rather than gigabytes.
 <br/>
 <br/>
-This isn't without its drawbacks though. Raycasting works best with walls at 90-degree angles, and lacks any real ability to simulate height differences, like stairs.
+This isn't without its drawbacks though. Raycasting works best with walls at 90-degree angles, and lacks any real ability to simulate height differences, like stairs or slopes.
 <br/>
 <br/>
 ## What's Coming

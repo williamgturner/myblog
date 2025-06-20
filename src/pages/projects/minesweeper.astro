@@ -1,0 +1,45 @@
+---
+import Layout from "../../layouts/MainLayout.astro";
+---
+
+<Layout>
+  <h1>minesweeper (2021)</h1>
+
+  <div>
+    <div
+      id="minesweeper-image"
+      class="w-[100%] lg:w-[50%] lg:m-5 flex flex-col float-right flex-grow-0 flex-shrink-1"
+    >
+      <img
+        class="border-2 rounded-md shadow-lg"
+        src="/images/projects/minesweeper.png"
+        alt="ascii image of skull"
+      />
+      <small
+        class="text-gray-400 text-center inline-block flex-grow-0 flex-shrink-1"
+        >My minesweeper clone</small
+      >
+    </div>
+    <p>
+      To cap off our digital technologies class in highschool, we had to make a game.
+      I wanted to extend myself past tic-tac-toe or paper-scissors-rock, and in my huberus, chose to recreate minesweeper.
+      Many nights in 2021 were lost to recreating the classic game. Regardless of the pain endured, I was extremely proud of my recreation,
+      the sprites were hand-drawn in photoshop, and my first attempt at pixel art.
+
+      <br/>
+      <br/>
+
+      Why did I include a scale graphics slider? I'm not entirely sure. I think this may have been an attempt at accessibility.
+      Regardless, the game is almost fully featured, with a timer, flagging, auto-discovering, and winning and losing.
+      All that is missing are a few hidden features such as making sure your initial click is not a bomb, and that guaranteeing
+      that it discovers a 'pocket'. There was also a version with an indicator to show whether your are in flagging or revealing mode,
+      a counter of bombs remaining, and a graphical timer. This version, unfortuantely, was before my introduction to Git, and as 
+      a result is lost to time.
+
+      <br/>
+      <br/>
+      Graphics were powered by Victoria University's ecs100 library. I have to give thanks to their CSSE department, 
+      as I had to request a copy of the .jar to boot up the game one more time.
+    </p>
+  </div>
+</Layout>

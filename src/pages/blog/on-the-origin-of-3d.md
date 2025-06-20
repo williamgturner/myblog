@@ -19,7 +19,7 @@ Over the course of this dev diary I'll walk through creating 3D graphics from sc
 Wait, *ray tracing*? I thought this was about *raycasting?* As a matter of fact, what's the difference?
 <br/>
 <br/>
-I can't fault you for getting confused; both techniques are very similar, and have been around for quite a while now. Both techniques involve casting rays to generate 3D environments, but ray tracing is generally more complex. Raycasting can create simple pseudo-3D (we'll get to this) environments made of walls, ceilings, and floors; while ray tracing is often used to simulate light, rays bounce off objects to illuminate a scene and produce shadows, highlights, and reflections. This series is about raycasting.
+I can't fault you for getting confused; both techniques are very similar, and have been around for quite a while now. Both techniques involve casting rays to generate 3D environments, but ray tracing is generally more complex. Raycasting can create simple pseudo-3D (we'll get to this) environments made of walls, ceilings, and floors; while ray tracing is often used to simulate light. In raytracing, rays bounce off objects to illuminate a scene and produce shadows, highlights, and reflections. This series, however, is about raycasting.
 <br/>
 <br/>
 

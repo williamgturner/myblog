@@ -7,14 +7,14 @@ const { frontmatter } = Astro.props;
 <MainLayout>
   <div class="mb-5">
     <a href="/blog" class="text-xl text-black">&lt; back</a>
-    <div id="post-header" class="flex">
+    <div id="post-header" class="flex flex-col md:flex-row mt-5">
       <img
-        class="w-15 h-15 self-center mr-5"
+        class="w-15 h-15 md:self-center mr-5 hidden md:visible"
         src={`${frontmatter.image.url}`}
         alt={frontmatter.title}
       />
       <div>
-        <h1 class="leading-tight">{frontmatter.title}</h1>
+        <h1 class="leading-tight md:text-7xl">{frontmatter.title}</h1>
         <small>
           {
             new Date(frontmatter.pubDate).toLocaleString("en-NZ", {
@@ -40,8 +40,7 @@ const { frontmatter } = Astro.props;
 <style>
   #post-header h1 {
     padding: 0;
-    font-size: 3rem;
-  }
+  } 
 
   a {
     font-family: "Libre Baskerville";

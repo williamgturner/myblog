@@ -9,7 +9,7 @@ const { frontmatter } = Astro.props;
     <a href="/blog" class="text-xl text-black">&lt; back</a>
     <div id="post-header" class="flex flex-col md:flex-row mt-5">
       <img
-        class="w-15 h-15 md:self-center mr-5 hidden md:visible"
+        class="w-15 h-15 md:self-center mr-5 hidden md:block"
         src={`${frontmatter.image.url}`}
         alt={frontmatter.title}
       />

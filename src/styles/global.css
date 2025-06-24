@@ -72,22 +72,28 @@ a:hover::after {
 pre {
   padding: 1rem;
   border-radius: 1rem;
+  font-size: 0.5rem;
 }
 
 code {
   color: white;
-  font-size: 1rem;
+  font-size: 0.9rem;
   background: #555;
   border-radius: 0.5rem;
-  padding-left: 0.7rem;
-  padding-right: 0.7rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 /* Reset for code inside pre */
 pre code {
+  font-size: 0.5rem;
   background: none;
   color: inherit;
   font-size: inherit;
   padding: 0;
   border-radius: 0;
+}
+
+pre code span {
+  font-size: 0.8rem;
 }

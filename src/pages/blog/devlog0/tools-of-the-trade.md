@@ -8,7 +8,7 @@ image:
   url: "/images/posts/devDiary0/0.png"
   alt: "Raygun"
 tags: ["devlog", "devDiary0"]
-draft: true
+draft: false
 ---
 To get started with raycasting, I need a few things. I'll be doing everything from 'scratch', but I'm not insane. Really all I need is some way to draw individual pixels on the screen. For this I'll be using [SDL3.0](https://wiki.libsdl.org/SDL3/FrontPage).
 
@@ -29,9 +29,8 @@ There's some boilerplate code to copy, thankfully there are some [example progra
 The *points* program shows how to draw individual pixels to the screen; here's what I'm aiming for:
 <div class="flex flex-col items-center my-4">
   <img src="/images/posts/devDiary0/0.2/pixel.png" alt="Black application window with single white pixel" class="w-1/2 h-auto" />
-  <small class="block text-center">Single white pixel!</small>
+  <small class="block text-center">Single white pixel! (Zoom in)</small>
 </div>
-<br/>
 
 The render loop is located within the `SDL_AppIterate()` function. Each iteration I'll clear the screen by setting my draw colour to black, calling the clear function, changing to the colour I want to draw, drawing my points, and finally calling the `SDL_RenderPresent()` function to push to the screen!
 

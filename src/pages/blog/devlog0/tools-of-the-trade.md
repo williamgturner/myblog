@@ -1,7 +1,7 @@
 ---
 layout: ../../../layouts/PostLayout.astro
 title: "devDiary 0.2: Tools of the Trade"
-pubDate: 2025-06-20T19:10:43+12:00
+pubDate: 2025-06-24T13:30:07+12:00
 description: "Start Your Engines"
 author: "Will Turner"
 image:

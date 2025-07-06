@@ -1,7 +1,7 @@
 ---
 layout: ../../../layouts/PostLayout.astro
 title: "devDiary 0.3: Everybody Loves Raycasting"
-pubDate: 2025-06-25T14:14:30+12:00
+pubDate: 2025-07-6T14:14:30+12:00
 description: "2D Walls to 3D Halls"
 author: "Will Turner"
 image:
